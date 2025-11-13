@@ -7,7 +7,7 @@ export TERMINAL="xterm-256color"
 export EDITOR="nvim"
 export PAGER="less"
 export READER="zathura"
-export BROWSER="firefox"
+export BROWSER="brave-browser"
 export VIDEO="mpv"
 export IMAGE="sxiv"
 
