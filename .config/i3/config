@@ -2,7 +2,7 @@ set $mod Mod4
 set $alt Mod1
 set $launcher rofi
 set $terminal alacritty
-set $browser firefox
+set $browser brave-browser
 
 set $bg #282828
 set $red #cc241d
@@ -60,7 +60,7 @@ exec_always killall polybar ; ~/.local/bin/polybar-start
 exec_always keepassxc ~/.local/share/*.kdbx
 exec_always nm-applet
 exec_always numlockx
-exec_always setxkbmap -layout "us" -variant "basic" -option "caps:escape"
+exec_always setxkbmap -layout "us" -variant "basic"
 
 bindsym $mod+r                 mode "resize"
 bindsym $mod+Shift+r           restart
@@ -90,7 +90,6 @@ bindsym $mod+Shift+s           exec maim --select | xclip -selection clipboard -
 bindsym $mod+a                 exec $terminal -e pulsemixer --color 1
 bindsym $mod+b                 exec obsidian
 bindsym $mod+m                 exec arandr
-bindsym $mod+n                 exec nordvpn-gui
 bindsym $mod+s                 exec flameshot gui
 bindsym $mod+v                 exec virtualbox
 
