@@ -5,7 +5,7 @@
 ```bash
 sudo apt update
 sudo apt upgrade
-sudo apt install \
+sudo apt install -y \
     7zip \
     alacritty \
     arandr \
@@ -75,7 +75,7 @@ ln -s ~/.config/environment.d/profile.conf ~/.profile
 cp .xsession ~/.xsession
 cp .gdbinit ~/.gdbinit
 cp .editrc ~/.editrc
-cp .binaryninja/* ~/.binaryninja/.
+cp -r .binaryninja/ ~/.binaryninja/
 ```
 
 ## Install neovim-plug
@@ -88,6 +88,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```bash
 curl -qsL 'https://install.pwndbg.re' | sh -s -- -t pwndbg-gdb
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl -fsS https://dl.brave.com/install.sh | sh
 ```
 
 ## Install tools via pipx
