@@ -55,7 +55,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-exec_always feh --no-fehbg --bg-center ~/.local/share/wallpaper
+exec_always feh --no-fehbg --bg-fill ~/.local/share/wallpapers/
 exec_always killall polybar ; ~/.local/bin/polybar-start
 exec_always keepassxc ~/.local/share/*.kdbx
 exec_always nm-applet
